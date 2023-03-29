@@ -1,3 +1,4 @@
+import {ProfilePage} from '../ProfilePage';
 import {
   Container,
   Header,
@@ -18,12 +19,12 @@ export function Main() {
           <BackIcon />
         </button>
         <ProfileInfo>
-          <strong>Xela Avela</strong>
+          <strong>Çalves Cristian</strong>
           <span>12 Tweets</span>
         </ProfileInfo>
       </Header>
 
-      {/* <ProfilePage/> */}
+      <ProfilePage/>
 
       <BottomMenu>
         <HomeIcon className="active" />
