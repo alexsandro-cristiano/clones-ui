@@ -1,15 +1,14 @@
-import {Main} from '../Main'
-import {Container,Wrapper} from './styles'
+import { Main } from "../Main";
+import { Container, Wrapper } from "./styles";
 
-export function Layout(){
-  return(
+export function Layout() {
+  return (
     <Container>
       <Wrapper>
-        conteudo da pagina
         {/* <MenuBar/> */}
-        {/* <Main/> */}
+        <Main />
         {/* <SideBar/> */}
       </Wrapper>
     </Container>
-  )
+  );
 }
