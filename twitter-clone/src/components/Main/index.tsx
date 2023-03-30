@@ -1,4 +1,4 @@
-import {ProfilePage} from '../ProfilePage';
+import { ProfilePage } from "../ProfilePage";
 import {
   Container,
   Header,
@@ -24,7 +24,7 @@ export function Main() {
         </ProfileInfo>
       </Header>
 
-      <ProfilePage/>
+      <ProfilePage />
 
       <BottomMenu>
         <HomeIcon className="active" />
