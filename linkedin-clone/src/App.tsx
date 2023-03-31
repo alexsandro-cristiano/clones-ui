@@ -1,12 +1,11 @@
-
+import { Layout } from "./components/Layout";
+import Global from "./styles/global";
 
 export function App() {
-  
-  return (
-    <>
-    <h2>
-      linkedin bu
-    </h2>
-    </>
-  )
+	return (
+		<>
+			<Layout />
+			<Global />
+		</>
+	);
 }
