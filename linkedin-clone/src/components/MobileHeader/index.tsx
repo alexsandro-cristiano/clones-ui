@@ -1,10 +1,12 @@
+import { Container, ProfileCircle, SearchIcon, SearchInput } from "./styles";
 
-import { Container } from "./styles"
+export function MobileHeader() {
+	return (
+		<Container>
+			<ProfileCircle src="https://github.com/alexsandro-cristiano.png" />
 
-export function MobileHeader(){
-  return(
-   <Container>
-    header
-   </Container>
-  )
+			<SearchInput placeholder="Pesquisar" />
+			<SearchIcon />
+		</Container>
+	);
 }

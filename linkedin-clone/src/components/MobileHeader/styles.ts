@@ -1,55 +1,48 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { FiMessageSquare } from "react-icons/fi";
 
 export const Container = styled.div`
-  padding-bottom: 12px;
+	height: 48px;
+	padding: 0 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-  .profile-cover {
-    width: 100%;
-    height: 54px;
-    background: var(--color-header);
-  }
-  .profile-picture {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    border: 2px solid var(--color-white);
-    box-shadow: inset 0 1.5px 3px 0 var(--black-a15, rgba(0, 0, 0, 0.15)),
-      0 1.5px 3px 0 var(--black-a15, rgba(0, 0, 0, 0.15));
-
-    display: flex;
-    margin: -38px auto 12px;
-  }
-  h1 {
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    color: var(--color-black);
-  }
-  h2 {
-    margin-top: 4px;
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
-    color: var(--color-gray);
-  }
-  .separator {
-    width: 100%;
-    border-bottom: 1px solid var(--color-separator);
-    margin: 16px 0 12px;
-  }
-  .key-value {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12px;
-    margin: 0 12px;
-    font-weight: 600;
-
-    .key {
-      color: var(--color-gray);
-    }
-    .value {
-      color: var(--color-link);
-    }
-  }
+	background: var(--color-link);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	@media (min-width: 1180px) {
+		display: none;
+	}
+`;
+export const ProfileCircle = styled.img`
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	border: 1px solid var(--color-icons);
+`;
+export const SearchInput = styled.input`
+	margin-left: 16px;
+	width: 100%;
+	background: var(--color-input);
+	color: var(--color-black);
+	font-size: 14px;
+	padding: 7.5px 8px;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	&:focus {
+		background: var(--color-white);
+	}
+`;
+export const SearchIcon = styled(FiMessageSquare)`
+	width: 24px;
+	height: 24px;
+	color: var(--color-white);
+	border-radius: 4px;
+	flex-shrink: 0;
+	margin-left: 17px;
 `;
